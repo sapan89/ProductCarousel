@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Slider</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+	<section class="product-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+					<h2>Feature Product</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+				<div class="product-carousel owl-theme owl-carousel">
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-01.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 01</h4>
+							<h6 class="price">$ 20.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-02.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 02</h4>
+							<h6 class="price">$ 30.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-03.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 03</h4>
+							<h6 class="price">$ 50.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-04.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 04</h4>
+							<h6 class="price">$ 25.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-05.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 05</h4>
+							<h6 class="price">$ 29.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-06.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 06</h4>
+							<h6 class="price">$ 30.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-01.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 07</h4>
+							<h6 class="price">$ 40.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-04.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 08</h4>
+							<h6 class="price">$ 25.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-05.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 09</h4>
+							<h6 class="price">$ 29.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-06.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 10</h4>
+							<h6 class="price">$ 30.00</h6>
+						</div>
+					</div>
+					<div class="item">
+						<div class="product-image">
+							<img src="img/product-01.jpg" alt="product">
+						</div>
+						<div class="product-desc">
+							<h4 class="title">Product name 11</h4>
+							<h6 class="price">$ 40.00</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>		
+		</div>		
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			  $('.product-carousel').owlCarousel({
+			  	loop:true,
+			  	items:10,			  	
+			    margin:10,
+			    slideBy: 5,
+			    dots:true,
+			    nav:true,
+			    smartSpeed: 500,
+			    animateIn: 'linear',
+			    animateOut: 'linear',
+			    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        480:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			 })
+		});
+	</script>
+</body>
+</html>
